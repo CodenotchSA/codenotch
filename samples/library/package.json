@@ -1,0 +1,35 @@
+{
+    "name": "library",
+    "private": true,
+    "version": "0.1.0",
+    "description": "Team Library, a Codenotch sample: the books of a team's shelf, who borrowed which, when it is due back.",
+    "scripts": {
+        "start": "cn project start",
+        "dev": "cn react dev",
+        "build": "cn project compile",
+        "test": "npm run test:unit && npm run test:process",
+        "test:unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "test:process": "cn project test",
+        "test:playwright": "playwright test"
+    },
+    "dependencies": {
+        "@codenotch/orm": "1.2.2",
+        "@codenotch/react": "1.2.2",
+        "react": "^19.2.8",
+        "react-dom": "^19.2.8"
+    },
+    "devDependencies": {
+        "@codenotch/process": "1.2.2",
+        "@jest/globals": "^30.5.0",
+        "@playwright/test": "^1.63.0",
+        "@types/node": "^20.19.34",
+        "@types/react": "^19.2.18",
+        "@types/react-dom": "^19.2.4",
+        "@vitejs/plugin-react": "^6.0.5",
+        "jest": "^30.5.0",
+        "sass-embedded": "^1.97.3",
+        "ts-jest": "^29.4.14",
+        "typescript": "^5.9.3",
+        "vite": "^8.0.0"
+    }
+}

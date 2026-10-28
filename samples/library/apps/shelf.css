@@ -1,0 +1,161 @@
+:root {
+    --ink: #1f2933;
+    --muted: #6b7680;
+    --paper: #fbfaf7;
+    --line: #e4e1d8;
+    --accent: #2f6f5e;
+    --late: #b3412e;
+    color-scheme: light;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* useCodenotch().setTheme('dark') puts the 'dark' class on <html> */
+html.dark {
+    --ink: #e6e3dc;
+    --muted: #9aa3ab;
+    --paper: #1b1f22;
+    --line: #343a3f;
+    --accent: #6cbfa8;
+    --late: #f08a76;
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+}
+
+main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 2px solid var(--ink);
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-family: Georgia, serif;
+}
+
+h2 {
+    margin: 32px 0 12px;
+    font-size: 1.1rem;
+}
+
+.who, .muted {
+    color: var(--muted);
+}
+
+.notice {
+    margin: 16px 0 0;
+    padding: 10px 12px;
+    border-left: 4px solid var(--accent);
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    cursor: pointer;
+}
+
+.notice.error {
+    border-color: var(--late);
+    background: color-mix(in srgb, var(--late) 10%, transparent);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 6px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.loans {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.loans li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.badge {
+    margin-left: 8px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.badge.free {
+    margin-left: 0;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.badge.late {
+    color: var(--late);
+    border: 1px solid var(--late);
+}
+
+input, button {
+    font: inherit;
+    color: inherit;
+}
+
+input {
+    padding: 7px 10px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: transparent;
+}
+
+.search {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 6px 14px;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    background: var(--accent);
+    color: var(--paper);
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.add {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.add input {
+    flex: 1 1 180px;
+}

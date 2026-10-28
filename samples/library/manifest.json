@@ -1,0 +1,25 @@
+{
+    "title": "Team Library",
+    "name": "library",
+    "uid": "cn.codenotch.library",
+    "uri": "library",
+    "version": "0.1.0",
+    "languages": [
+        "en"
+    ],
+    "roles": [
+        {
+            "name": "Admin",
+            "description": "Librarians: they put new books on the shelf and may return a book for its borrower."
+        }
+    ],
+    "parameters": [
+        {
+            "name": "loanDays",
+            "type": "number",
+            "default": 21,
+            "description": "How many days a book may be kept: a loan is due back that many days after it was borrowed."
+        }
+    ],
+    "index": "shelf"
+}

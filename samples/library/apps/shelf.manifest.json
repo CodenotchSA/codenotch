@@ -1,0 +1,12 @@
+{
+    "app": {
+        "name": "shelf",
+        "description": "The team's shelf: borrow a book, return it, see who has the others."
+    },
+    "auth": {
+        "scope": "internal"
+    },
+    "html": {
+        "title": "Team Library"
+    }
+}
