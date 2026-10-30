@@ -51,7 +51,7 @@ Line by line:
   gets the same ones if it ever replays. See [Durable
   execution](../build/processes/durable-execution.md).
 - `ctx.tables.Expense.write(id, …)` creates the row, or updates it when it exists. A write
-  that creates a row must give every column that is not `nullable`.
+  that creates a row must give every column that is not `nullable` and has no default.
 
 ## Run it
 

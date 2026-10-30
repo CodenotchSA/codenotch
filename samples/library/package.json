@@ -13,13 +13,13 @@
         "test:playwright": "playwright test"
     },
     "dependencies": {
-        "@codenotch/orm": "1.2.2",
-        "@codenotch/react": "1.2.2",
+        "@codenotch/orm": "1.2.3",
+        "@codenotch/react": "1.2.3",
         "react": "^19.2.8",
         "react-dom": "^19.2.8"
     },
     "devDependencies": {
-        "@codenotch/process": "1.2.2",
+        "@codenotch/process": "1.2.3",
         "@jest/globals": "^30.5.0",
         "@playwright/test": "^1.63.0",
         "@types/node": "^20.19.34",

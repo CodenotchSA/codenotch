@@ -1,5 +1,6 @@
 {
     "title": "Team Library",
+    "description": "The books of a team: who borrowed which one, and when it is due back.",
     "name": "library",
     "uid": "cn.codenotch.library",
     "uri": "library",

@@ -29,6 +29,7 @@ The `package.json` scripts call `cn` for you: `npm start` runs `cn project start
 ```json
 {
     "title": "hello",
+    "description": "Greets whoever opens it.",
     "name": "hello",
     "uid": "com.codenotch.hello",
     "uri": "hello",
@@ -46,6 +47,7 @@ The `package.json` scripts call `cn` for you: `npm start` runs `cn project start
 | Key | What it is |
 | --- | --- |
 | `title` | The name people read, in the portal |
+| `description` | What the project does, in a sentence or two: shown under the title in the portal and when the project is picked from a package store. Optional |
 | `name` | The name of the project on the runtime: lowercase letters, digits and `_`, starting with a letter |
 | `uid` | The identity of the project, wherever it is installed: three segments separated by dots. Replace `com.codenotch` with your own, such as `com.example.hello` |
 | `uri` | The first segment of the project's addresses: `/hello/…`. Lowercase letters, digits and `-` |

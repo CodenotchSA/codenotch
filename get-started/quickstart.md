@@ -17,8 +17,8 @@ cd hello
 ```
 
 `-t default` starts from the empty project template, and `-p hello` creates it in a new
-folder named `hello`. The folder must not exist yet. The CLI writes six files and installs the
-project's npm packages:
+folder named `hello`. The folder must not exist yet, or be empty. The CLI writes six files and
+installs the project's npm packages:
 
 ```text
 ✓ 6 file(s) written from the 'default' template
@@ -57,8 +57,8 @@ hello is ready!
 Project "hello" is now running.
 ```
 
-The build warns that the icons `logo192.png` and `logo512.png` are missing: the template's
-app declares them but does not include them. You can ignore these warnings.
+The build warns that the app has no icons: without them, browsers do not propose to install
+it. You can ignore this warning.
 
 Your browser shows the app at `http://127.0.0.1:5005/hello/`. It displays the environment
 the runtime gave it: the runtime's address, the project's name, the app's manifest, the

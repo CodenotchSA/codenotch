@@ -24,6 +24,7 @@ Open `manifest.json` and replace its content:
 ```json
 {
     "title": "Expenses",
+    "description": "Staff submit their expenses, a manager approves them.",
     "name": "expenses",
     "uid": "com.example.expenses",
     "uri": "expenses",
@@ -37,7 +38,7 @@ Open `manifest.json` and replace its content:
 }
 ```
 
-- `title` is the name people read in the portal.
+- `title` is the name people read in the portal, `description` what they read under it.
 - `name` and `uri` identify the project on the runtime: its app answers at `/expenses/`.
 - `uid` identifies the project wherever it is installed. Use your own domain, reversed.
 - `roles` declares the roles of the project. You give the `Manager` role to the people who

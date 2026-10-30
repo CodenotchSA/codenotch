@@ -99,7 +99,8 @@ The page imports `submitExpense` to get a typed handle on the process: `startPro
 its input and its output. The code of the process never reaches the browser.
 
 `startProcess` waits for the run to end. A run that fails does not throw: the result has
-`isError` set, and `errorMessage` says why.
+`isError` set, `errorMessage` says why, and `errorCode` holds the code of the `ProcessError`
+the process threw.
 
 ## See it work
 
@@ -114,10 +115,13 @@ appears at the top of the list, with the status `Submitted`.
 Now submit an amount of `-3`. The page shows the error of the run:
 
 ```text
-Failed to get process result: Error: Process failed: expense.invalidAmount: The amount must be a positive number.
+The amount must be a positive number.
 ```
 
-<!-- gap G40: output read from the code of main, to confirm by a run; the app receives the error code inside a message, not as a field -->
+Its `errorCode` is `expense.invalidAmount`: test the code, not the message, to react to one
+error in particular.
+
+<!-- gap G40: output read from the code of main, to confirm by a run -->
 
 ## What you did
 
